@@ -11,6 +11,12 @@ const router = express.Router();
 
 // GET /api/public/data - Dynamic content directly from the database for the public website
 router.get('/data', async (req, res) => {
+  res.set({
+    'Cache-Control': 'no-store, no-cache, must-revalidate, proxy-revalidate',
+    'Pragma': 'no-cache',
+    'Expires': '0',
+    'Surrogate-Control': 'no-store'
+  });
   try {
     let settings = null;
     let prices = null;

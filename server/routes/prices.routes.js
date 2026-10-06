@@ -12,6 +12,12 @@ const isValidId = (id) => mongoose.Types.ObjectId.isValid(id);
 
 // GET /api/prices - List all prices
 router.get('/', async (req, res) => {
+  res.set({
+    'Cache-Control': 'no-store, no-cache, must-revalidate, proxy-revalidate',
+    'Pragma': 'no-cache',
+    'Expires': '0',
+    'Surrogate-Control': 'no-store'
+  });
   try {
     if (isDBConnected()) {
       try {

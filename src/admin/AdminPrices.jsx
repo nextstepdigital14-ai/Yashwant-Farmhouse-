@@ -43,7 +43,7 @@ export default function AdminPrices() {
   const fetchAllPrices = async () => {
     try {
       setLoading(true);
-      const res = await safeFetch('/api/prices');
+      const res = await safeFetch(`/api/prices?_t=${Date.now()}`);
       if (res.ok && res.data?.success && Array.isArray(res.data?.prices)) {
         setPricesList(res.data.prices);
       } else if (Array.isArray(sitePrices) && sitePrices.length > 0) {

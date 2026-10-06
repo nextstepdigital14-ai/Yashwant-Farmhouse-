@@ -3,32 +3,12 @@ import { safeFetch } from '../utils/api';
 
 const SiteContext = createContext();
 
-const SITE_CACHE_KEY = 'yashwant_farm_current_site_data';
-
-const getInitialSiteData = () => {
-  if (typeof window !== 'undefined') {
-    try {
-      const cached = localStorage.getItem(SITE_CACHE_KEY);
-      if (cached) {
-        const parsed = JSON.parse(cached);
-        if (parsed && typeof parsed === 'object') {
-          return {
-            settings: parsed.settings || null,
-            prices: Array.isArray(parsed.prices) ? parsed.prices : [],
-            availability: parsed.availability || {},
-            gallery: Array.isArray(parsed.gallery) ? parsed.gallery : []
-          };
-        }
-      }
-    } catch (_) {}
-  }
-  return {
-    settings: null,
-    prices: [],
-    availability: {},
-    gallery: []
-  };
-};
+const getInitialSiteData = () => ({
+  settings: null,
+  prices: [],
+  availability: {},
+  gallery: []
+});
 
 export const SiteProvider = ({ children }) => {
   const [data, setData] = useState(getInitialSiteData);
@@ -38,7 +18,9 @@ export const SiteProvider = ({ children }) => {
   const fetchData = useCallback(async () => {
     try {
       setLoading(true);
-      const res = await safeFetch('/api/public/data');
+      const res = await safeFetch(`/api/public/data?_t=${Date.now()}`, {
+        cache: 'no-store'
+      });
       
       if (res.ok && res.data && res.data.success && res.data.data) {
         const serverData = res.data.data;
@@ -51,10 +33,6 @@ export const SiteProvider = ({ children }) => {
 
         setData(currentData);
         setError(null);
-
-        try {
-          localStorage.setItem(SITE_CACHE_KEY, JSON.stringify(currentData));
-        } catch (_) {}
       } else {
         console.warn('[SiteData] Backend response issue:', res.error);
         setError(res.error);

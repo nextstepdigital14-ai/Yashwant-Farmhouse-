@@ -22,7 +22,12 @@ export async function safeFetch(url, options = {}) {
 
     const targetUrl = url.startsWith('/') && BASE_URL ? `${BASE_URL}${url}` : url;
 
-    const res = await fetch(targetUrl, options);
+    const fetchOptions = {
+      cache: 'no-store',
+      ...options
+    };
+
+    const res = await fetch(targetUrl, fetchOptions);
     const contentType = res.headers.get('content-type') || '';
 
 

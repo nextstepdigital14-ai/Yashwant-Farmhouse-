@@ -8,7 +8,7 @@
     "lastLogin": "2026-10-06T13:35:45.561Z"
   },
   "settings": {
-    "_id": "6abd4a58e806e87abf8a171a",
+    "_id": "6ac5142f52cf5c50a281bc13",
     "farmhouseName": "Yashwant Farmhouse",
     "nameMarathi": "यशवंत फार्महाऊस",
     "tagline": "A peaceful farmhouse getaway in Nandwal, Kolhapur.",
@@ -26,13 +26,13 @@
     "locationShort": "Nandwal, Kolhapur",
     "mapsUrl": "https://maps.app.goo.gl/N341yLui8hh7EGDp9?g_st=aw",
     "mapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.5!2d74.22!3d16.7!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc055007e08b7b5%3A0x451566f0840fa534!2z4KSv4KS24KS14KSC4KSkIOCkq-CkvuCksOCljeCkruCkueCkvuCkiuCkuA!5e0!3m2!1sen!2sin!4v1695000000000",
-    "updatedAt": "2026-10-06T13:35:38.867Z",
-    "createdAt": "2026-09-30T17:43:52.224Z",
+    "createdAt": "2026-10-06T15:30:55.993Z",
+    "updatedAt": "2026-10-06T15:30:55.993Z",
     "__v": 0
   },
   "prices": [
     {
-      "_id": "6abd4a58e806e87abf8a171d",
+      "_id": "6ac5143052cf5c50a281bc16",
       "title": "Weekday Stay",
       "category": "Monday - Thursday",
       "amount": 5500,
@@ -49,12 +49,12 @@
       "badge": "Calm Retreat",
       "active": true,
       "order": 1,
-      "__v": 0,
       "createdAt": "2026-09-30T17:43:52.234Z",
-      "updatedAt": "2026-10-05T15:08:14.194Z"
+      "updatedAt": "2026-10-05T15:08:14.194Z",
+      "__v": 0
     },
     {
-      "_id": "6abd4a58e806e87abf8a171e",
+      "_id": "6ac5143052cf5c50a281bc17",
       "title": "Weekend Stay",
       "category": "Friday - Sunday",
       "amount": 8000,
@@ -71,12 +71,12 @@
       "badge": "Most Popular",
       "active": true,
       "order": 2,
-      "__v": 0,
       "createdAt": "2026-09-30T17:43:52.234Z",
-      "updatedAt": "2026-10-03T17:02:19.758Z"
+      "updatedAt": "2026-10-03T17:02:19.758Z",
+      "__v": 0
     },
     {
-      "_id": "6abd4a58e806e87abf8a171f",
+      "_id": "6ac5143052cf5c50a281bc18",
       "title": "Day Outing / Picnic",
       "category": "Day Visit (10 AM - 6 PM)",
       "amount": 5500,
@@ -93,12 +93,12 @@
       "badge": "Day Pass",
       "active": true,
       "order": 3,
-      "__v": 0,
       "createdAt": "2026-09-30T17:43:52.234Z",
-      "updatedAt": "2026-09-30T17:43:52.234Z"
+      "updatedAt": "2026-09-30T17:43:52.234Z",
+      "__v": 0
     },
     {
-      "_id": "6abd4a58e806e87abf8a1720",
+      "_id": "6ac5143052cf5c50a281bc19",
       "title": "Extra Guest",
       "category": "Per Person",
       "amount": 500,
@@ -112,9 +112,9 @@
       "badge": "",
       "active": true,
       "order": 4,
-      "__v": 0,
       "createdAt": "2026-09-30T17:43:52.234Z",
-      "updatedAt": "2026-09-30T17:43:52.234Z"
+      "updatedAt": "2026-09-30T17:43:52.234Z",
+      "__v": 0
     }
   ],
   "availability": {
@@ -321,14 +321,12 @@
     "2026-11-25": {
       "status": "unavailable",
       "notes": "Pool Maintenance",
-      "guestCount": 0,
-      "updatedAt": "2026-10-06T13:35:38.825Z"
+      "guestCount": 0
     },
     "2026-11-26": {
       "status": "unavailable",
       "notes": "Pool Maintenance",
-      "guestCount": 0,
-      "updatedAt": "2026-10-06T13:35:38.825Z"
+      "guestCount": 0
     },
     "2026-11-27": {
       "status": "available",
@@ -343,19 +341,19 @@
   },
   "gallery": [
     {
-      "_id": "6abd4a58e806e87abf8a1723",
+      "_id": "6ac5143052cf5c50a281bc1c",
       "imageUrl": "/images/farmhouse-exterior-2.jpg",
       "imageName": "farmhouse-exterior-2.jpg",
       "altText": "Yashwant Farmhouse — full property view with swimming pool and lush greenery",
       "featured": true,
       "category": "Property",
       "order": 1,
-      "__v": 0,
       "createdAt": "2026-09-30T17:43:52.242Z",
-      "updatedAt": "2026-09-30T17:43:52.242Z"
+      "updatedAt": "2026-09-30T17:43:52.242Z",
+      "__v": 0
     },
     {
-      "_id": "6ac1316e6c8501691e755764",
+      "_id": "6ac5143052cf5c50a281bc1d",
       "imageUrl": "/images/farmhouse-lawn-test.jpg",
       "imageName": "farmhouse-lawn-test.jpg",
       "altText": "Lush Green Lawn at Sunset",
@@ -367,40 +365,40 @@
       "__v": 0
     },
     {
-      "_id": "6abd4a58e806e87abf8a1724",
+      "_id": "6ac5143052cf5c50a281bc1e",
       "imageUrl": "/images/farmhouse-exterior-1.jpg",
       "imageName": "farmhouse-exterior-1.jpg",
       "altText": "Yashwant Farmhouse — red-brick cottage with traditional tiled roof and pool",
       "featured": false,
       "category": "Architecture",
       "order": 2,
-      "__v": 0,
       "createdAt": "2026-09-30T17:43:52.242Z",
-      "updatedAt": "2026-09-30T17:43:52.242Z"
+      "updatedAt": "2026-09-30T17:43:52.242Z",
+      "__v": 0
     },
     {
-      "_id": "6abd4a58e806e87abf8a1725",
+      "_id": "6ac5143052cf5c50a281bc1f",
       "imageUrl": "/images/farmhouse-pool-view.jpg",
       "imageName": "farmhouse-pool-view.jpg",
       "altText": "Private swimming pool at Yashwant Farmhouse with surrounding countryside",
       "featured": false,
       "category": "Pool",
       "order": 3,
-      "__v": 0,
       "createdAt": "2026-09-30T17:43:52.242Z",
-      "updatedAt": "2026-09-30T17:43:52.242Z"
+      "updatedAt": "2026-09-30T17:43:52.242Z",
+      "__v": 0
     },
     {
-      "_id": "6abd4a58e806e87abf8a1726",
+      "_id": "6ac5143052cf5c50a281bc20",
       "imageUrl": "/images/farmhouse-logo.jpg",
       "imageName": "farmhouse-logo.jpg",
       "altText": "Yashwant Farmhouse branding — यशवंत फार्महाऊस Nandwal, Kolhapur",
       "featured": false,
       "category": "Brand",
       "order": 4,
-      "__v": 0,
       "createdAt": "2026-09-30T17:43:52.242Z",
-      "updatedAt": "2026-09-30T17:43:52.242Z"
+      "updatedAt": "2026-09-30T17:43:52.242Z",
+      "__v": 0
     }
   ],
   "enquiries": [
