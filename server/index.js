@@ -48,12 +48,18 @@ if (fs.existsSync(distDir)) {
 // API Router
 const apiRouter = express.Router();
 
-// Ensure DB connection is initialized for serverless / lambda invocations
+let seedRan = false;
+
+// Ensure DB connection and initial structure are initialized for serverless / lambda invocations
 apiRouter.use(async (req, res, next) => {
   if (!isDBConnected()) {
     try {
       await connectDB();
     } catch (_) {}
+  }
+  if (isDBConnected() && !seedRan) {
+    seedRan = true;
+    seedData().catch((err) => console.warn('[Seed] Warning:', err.message));
   }
   next();
 });
